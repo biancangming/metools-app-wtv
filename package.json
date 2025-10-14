@@ -1,0 +1,52 @@
+{
+  "name": "metools-app-demo",
+  "cnName": "迷途demo",
+  "version": "1.0.0",
+  "description": "一个基于 Vue 3 的现代化 Web 应用",
+  "author": "Jiawei",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist",
+    "*.png",
+    "*.jpg",
+    "*.svg",
+    "src"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "validate": "node scripts/validate-package.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/node": "^24.5.2",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "@vue/runtime-core": "^3.5.21",
+    "@vue/runtime-dom": "^3.5.21",
+    "@vueuse/core": "^13.9.0",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.12.2",
+    "naive-ui": "^2.43.1",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.92.1",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.2.2",
+    "vite": "^6.3.6",
+    "vue": "^3.5.21",
+    "vue-tsc": "^2.0.0"
+  },
+  "keywords": [
+    "vue3",
+    "vite",
+    "typescript",
+    "web-app"
+  ],
+  "dependencies": {
+    "unplugin-auto-import": "^20.2.0",
+    "unplugin-vue-components": "^29.1.0"
+  }
+}
