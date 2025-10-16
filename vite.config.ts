@@ -5,6 +5,7 @@ import Components from 'unplugin-vue-components/vite'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import tailwindcss from '@tailwindcss/vite'
 
 // 在 ES 模块中模拟 __dirname
 const __filename = fileURLToPath(import.meta.url)
@@ -14,6 +15,7 @@ export default defineConfig({
     base: './',
     plugins: [
         vue(),
+        tailwindcss(),
         AutoImport({
             imports: ['vue'],
             resolvers: [NaiveUiResolver()],

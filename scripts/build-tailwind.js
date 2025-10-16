@@ -11,7 +11,7 @@ if (!existsSync(distDir)) {
 // 使用 PostCSS 处理 Tailwind CSS
 try {
   execSync(
-    `npx postcss ./src/assets/styles/tailwind.css -o ./dist/tailwind.temp.css --no-map`,
+    `npx postcss ./src/assets/tailwind.css -o ./dist/tailwind.temp.css --no-map`,
     { stdio: 'inherit' }
   )
   console.log('Tailwind CSS 构建成功!')

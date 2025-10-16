@@ -7,6 +7,7 @@
 2. 项目基于 Vue 3 + TypeScript + Vite 构建
 3. 使用 Tailwind CSS 进行样式开发
 4. 支持 Naive UI 组件库
+5. 项目参考自系统文件夹wtv项目，该项目是一个electron项目，但是我们的项目不需要使用electron，相关api使用本系统src/env.d.ts文件中api代替，找不到对应api时，帮我预留即可。
 
 ## 项目结构
 

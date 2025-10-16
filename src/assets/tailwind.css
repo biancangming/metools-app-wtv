@@ -1,0 +1,151 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+html,body,#app {
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden
+}
+
+/* 亮色主题背景 */
+html.light, html.light body, html.light #app {
+    @apply text-gray-900;
+}
+
+/* 暗色主题背景 */
+html.dark, html.dark body, html.dark #app {
+    @apply dark:bg-[#22221F];
+    @apply dark:text-gray-100;
+}
+
+/* 默认主题（跟随系统） */
+html:not(.light):not(.dark), 
+html:not(.light):not(.dark) body, 
+html:not(.light):not(.dark) #app {
+    @apply text-gray-900;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not(.light):not(.dark), 
+    html:not(.light):not(.dark) body, 
+    html:not(.light):not(.dark) #app {
+        @apply bg-gradient-to-br from-gray-800 via-gray-900 to-gray-900;
+        @apply text-gray-100;
+    }
+}
+
+/* 滚动条样式 - 亮色主题 */
+html.light ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+html.light ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+html.light ::-webkit-scrollbar-corner {
+    background: #f1f5f9;
+}
+
+/* 滚动条样式 - 暗色主题 */
+html.dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+    background: #374151;
+    border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background: #6b7280;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+html.dark ::-webkit-scrollbar-corner {
+    background: #374151;
+}
+
+/* 默认滚动条样式（跟随系统） */
+html:not(.light):not(.dark) ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+html:not(.light):not(.dark) ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+
+html:not(.light):not(.dark) ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+html:not(.light):not(.dark) ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+html:not(.light):not(.dark) ::-webkit-scrollbar-corner {
+    background: #f1f5f9;
+}
+
+/* 系统暗色模式下的滚动条样式 */
+@media (prefers-color-scheme: dark) {
+    html:not(.light):not(.dark) ::-webkit-scrollbar-track {
+        background: #374151;
+    }
+
+    html:not(.light):not(.dark) ::-webkit-scrollbar-thumb {
+        background: #6b7280;
+    }
+
+    html:not(.light):not(.dark) ::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af;
+    }
+
+    html:not(.light):not(.dark) ::-webkit-scrollbar-corner {
+        background: #374151;
+    }
+}
+
+/* Firefox 滚动条样式 */
+html.light * {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+html.dark * {
+    scrollbar-width: thin;
+    scrollbar-color: #6b7280 #374151;
+}
+
+html:not(.light):not(.dark) * {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not(.light):not(.dark) * {
+        scrollbar-color: #6b7280 #374151;
+    }
+}

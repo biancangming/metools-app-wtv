@@ -1,9 +1,9 @@
 {
   "name": "metools-app-demo",
-  "cnName": "迷途demo",
+  "cnName": "wtv",
   "version": "1.0.0",
-  "description": "一个基于 Vue 3 的现代化 Web 应用",
-  "author": "Jiawei",
+  "description": "一个检测直播源有效性的小应用",
+  "author": "一个橙子 pro",
   "license": "MIT",
   "type": "module",
   "files": [
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.14",
     "@types/node": "^24.5.2",
     "@vitejs/plugin-vue": "^5.2.4",
     "@vue/runtime-core": "^3.5.21",
@@ -46,7 +47,16 @@
     "web-app"
   ],
   "dependencies": {
+    "@vicons/ionicons5": "^0.13.0",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.18",
+    "howtools": "^0.2.4",
+    "iptv-playlist-parser": "^0.15.1",
+    "mpegts.js": "^1.8.0",
+    "pinia": "^3.0.3",
     "unplugin-auto-import": "^20.2.0",
-    "unplugin-vue-components": "^29.1.0"
+    "unplugin-vue-components": "^29.1.0",
+    "vue-router": "^4.5.1",
+    "vue3-contextmenu": "^0.2.12"
   }
 }
