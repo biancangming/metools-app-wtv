@@ -1,7 +1,7 @@
 {
   "name": "metools-app-wtv",
   "cnName": "wtv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个检测直播源有效性的小应用",
   "author": "一个橙子 pro",
   "license": "MIT",
