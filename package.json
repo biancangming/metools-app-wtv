@@ -6,6 +6,10 @@
   "author": "一个橙子 pro",
   "license": "MIT",
   "type": "module",
+  "metools": {
+    "width": 975,
+    "height": 549
+  },
   "files": [
     "dist",
     "*.png",
